@@ -9,12 +9,22 @@
 <body>
     <div class="container">
         <div class="row m-5">
-            <h2><%= codice %></h2>
-            <ul class="list-group">
-                <% for(const p of produzione) { %>
-                    <li class="list-group-item">pezzi prodotti: <%= p.pezzi_prodotti %></li>
-                <% } %>
-            </ul>
+            <div class="d-flex justify-content-between align-center mb-2">
+                <h2><%= codice %></h2>
+                <a href="/" class="btn btn-outline-primary">Torna alla lista</a>
+            </div>
+
+            <div class="row">
+                <ul class="list-group col-6">
+                    <% for(const p of produzione) { %>
+                        <li class="list-group-item">pezzi prodotti: <%= p.pezzi_prodotti %></li>
+                    <% } %>
+                </ul>
+                <div class="col-6">
+                    ciao
+                </div>
+            </div>
+
         </div>
     </div>
 </body>

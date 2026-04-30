@@ -14,6 +14,7 @@
                     <div class="card-body">
                         <h5 class="card-title"><%= commessa.codice_prodotto %></h5>
                         <p class="card-text mb-1 text-muted">Quantità prevista: <%= commessa.quantita_prevista %></p>
+                        <p class="card-text mb-1 text-muted">Quantità prodotta: <%= commessa.totale_prodotti ?? 0 %></p>
                         <p class="card-text text-muted">Stato: <%= commessa.stato_commessa %></p>
                         <div class="d-flex justify-content-end">
                             <a href="/commesse/<%= commessa.id_commessa %>" class="btn btn-outline-primary">Vai al dettaglio</a>
